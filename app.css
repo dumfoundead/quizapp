@@ -1,0 +1,122 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: cover;
+  background-color: #000000;
+  background-image: url("basketball-bg.jpg");
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+button {
+  background: lightsalmon;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  color: white;
+  padding-top: 55px;
+}
+
+input[type=radio] {
+  margin: 10px 0;
+}
+
+label {
+  font-size: 16px;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#next-question-button {
+  display: none;
+}
+
+.question-form button {
+  float: right;
+}
+
+.question-form .question {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 0 2%;
+}
+
+.question-score {
+  color: #eee;
+  font-size: 22px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Feedback - right answer */
+.right {
+  background: lightgreen;
+  border: 2px solid green;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+.start-screen, fieldset {
+  background: #eee;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 20px auto 0 auto;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Feedback - wrong answer */
+.wrong {
+  background: lightcoral;
+  border: 2px solid #fe0000;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+
+/* Responsive design */ 
+@media all and (min-width: 600px) {
+  label {
+    font-size: 18px;
+  } 
+
+  legend {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .start-screen, fieldset {
+    background: #eee;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 55px auto 0 auto;
+    padding: 40px;
+    width: 40%;
+  }
+}
